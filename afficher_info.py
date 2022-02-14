@@ -21,12 +21,15 @@ def demander_nom():
 
 #afficher informations
 def afficher_info(nomUser, ageUser):
-    return "Vous vous appelez " + str(nomUser) + " vous avez "+ str(ageUser) +" ans"
-
+    print("Vous vous appelez " + str(nomUser) + " vous avez "+ str(ageUser) +" ans")
+    if ageUser >= 18:
+        print("Vous etes majeur en france")
+    else:
+        print("Vous etes mineur en france")
 
 nomUser = demander_nom()
 ageUser = demander_age(nomUser)
 
 
 #afficher resultats
-print(afficher_info(nomUser, ageUser))
+afficher_info(nomUser, ageUser)
