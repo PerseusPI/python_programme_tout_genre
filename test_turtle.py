@@ -19,8 +19,9 @@ def creer_carre(taille):
 
 def plusieurs_carree(taille_depart,nb):
     for i in range(nb):
-        creer_carre(taille)
         taille = taille_depart * (i + 1)
+        creer_carre(taille)
+        
 
 
 taille = 10
