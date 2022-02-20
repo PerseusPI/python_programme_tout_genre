@@ -4,8 +4,7 @@ NOMBRE_MIN = 1
 NOMBRE_MAX = 10
 nombre_vie = 5
 NOMBRE_MAGIQUE = rd.randint(NOMBRE_MIN, NOMBRE_MAX)
-print(f"Vous avez {nombre_vie} vies")
-print(NOMBRE_MAGIQUE)
+print(f"Vous avez {nombre_vie} vies au départ")
 
 
 def verif(nbreUser):
