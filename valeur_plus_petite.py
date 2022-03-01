@@ -3,7 +3,6 @@ def trouver_minimum(listeUser:list) -> int or float:
     for i in range(0, len(listeUser) - 1):
         if listeUser[i] < min:
             min = listeUser[i]
-            print(f"min: {min}")
     return min
 
 
