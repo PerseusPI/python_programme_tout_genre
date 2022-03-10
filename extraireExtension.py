@@ -15,8 +15,9 @@ def extraire(extension: list[str], definition: tuple[tuple[str]]) -> list[str]:
     return res
 
 
-extensions = ["notepad.doc", "data.exe", "planning", "vac", "intra.txt", "moc.exe"]
+extensions = ["notepad.exe", "data.txt", "planning.doc", "vacances.jpeg", "intra", "virus.exe"]
 
+ #ajouter d'autre extensions si vous le souhaiter
 definitions_extensions = (
     ("exe", "Executable"),
     ("doc", "Document word"),
