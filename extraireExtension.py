@@ -1,4 +1,4 @@
-def extraire(extension: list[str], definition: tuple[tuple[str]]) -> list[str]:
+def extraire(extension: list[str], definition: tuple[tuple[str]]) -> str:
     l = [i.split(".") for i in extension]
     d = [i[0].lower() for i in definition]
     for i in range(len(l)):
