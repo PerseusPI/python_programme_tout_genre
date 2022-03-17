@@ -30,7 +30,10 @@ class PizzaPersonnaliser(Pizza):
         - tomate (taper 3[reference ""]) 
         Votre choix : """)) 
         for i in range(d)]
-
+        """
+        ici j'ai considerer qu'il n'yavais que trois ingredients avec les references 1,2,3 d'ou le else or ce n'est pas dutout optimiser
+        changer donc les conditions de manière propre en fonction de vos refrence pour les ingrédients.
+        """
         for i in range(len(self.ingredients)):
             if self.ingredients[i] == 1:
                 self.prix += 1
