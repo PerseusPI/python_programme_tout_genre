@@ -12,7 +12,7 @@ class Pizza:
         print(f"PIZZA {self.nom} : {self.prix} euros {pizza}")
         print(", ".join(self.ingredients))
         
-        
+
 class PizzaPersonnaliser(Pizza):
     numero = 0
     def __init__(self,nom,prix):
@@ -22,12 +22,13 @@ class PizzaPersonnaliser(Pizza):
         self.ingredients = []
     def AfficherPizza(self):
         d = int(input(f"Combien voulez vous d'ingredients pour la pizza numero {self.numero}: "))
-        self.ingredients = [int(input("""ingredients : 
-                                              Liste Ingredients:
-                                              - Brie (taper 1[reference de l'ingredient])
-                                              - emmental(taper 2[reference ""])
-                                              - tomate (taper 3[reference ""]) 
-                                              Votre choix : """)) 
+        self.ingredients = [int(input("""
+        ingredients : 
+        Liste Ingredients:
+        - Brie (taper 1[reference de l'ingredient])
+        - emmental(taper 2[reference ""])
+        - tomate (taper 3[reference ""]) 
+        Votre choix : """)) 
         for i in range(d)]
 
         for i in range(len(self.ingredients)):
